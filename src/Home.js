@@ -2,24 +2,45 @@ import React from 'react'
 import './Home.css'
 import 'boxicons'
 import { useState } from 'react';
+import { useEffect } from 'react';
+import Typed from 'typed.js';
+
+
 export default function Home() {
     const [hovered, setHovered] = useState(false);
+    useEffect(() => 
+    {
+        const options = {
+          strings: ['Frontend Developer'],
+          typeSpeed: 50, 
+          backSpeed: 30, 
+          loop: true, 
+        };
+        const typed = new Typed('.typing', options);
+        return () => {
+            typed.destroy();
+          };
+    }, []);
+
+    
   return (
     <div className="main">
         <header className="head">
             <a href="#" className="icon">.Sha</a>
             <nav className="bar">
-                <a href="#" className="active">Home</a>
-                <a href="#">About</a>
-                <a href="#">Specialization</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
+                <a href="#" style={{"--i":1}} className="active">Home</a>
+                <a href="#" style={{"--i":2}} >About</a>
+                <a href="#" style={{"--i":3}} >Specialization</a>
+                <a href="#" style={{"--i":4}} >Projects</a>
+                <a href="#" style={{"--i":5}} >Contact</a>
             </nav>
         </header>
         <section className="home">
             <div className="hcontent">
                 <h1>Hi, I'm Sharan</h1>
-                <h3>Frontend Developer</h3>
+                <h3>
+                    <span className="typing"></span>
+                </h3>
                 <p>Passionate and versatile, I am a seasoned Frontend Developer, 
                     Backend Enthusiast, and IoT Explorer, continuously pushing 
                     the boundaries of technology and weaving innovation into 
