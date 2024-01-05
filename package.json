@@ -10,7 +10,11 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "react-scripts": "^5.0.1",
+=======
+    "react-scripts": "5.0.1",
+>>>>>>> 699e721ccfe8ee4f1c09a80949b4b433d2dda86a
 =======
     "react-scripts": "5.0.1",
 >>>>>>> 699e721ccfe8ee4f1c09a80949b4b433d2dda86a

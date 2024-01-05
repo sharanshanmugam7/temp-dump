@@ -4,6 +4,10 @@
 
 * {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    margin: 0;
+>>>>>>> 699e721ccfe8ee4f1c09a80949b4b433d2dda86a
 =======
     margin: 0;
 >>>>>>> 699e721ccfe8ee4f1c09a80949b4b433d2dda86a
@@ -155,6 +159,7 @@ body {
     background: #66FCF1;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .about {
     display: flex;
     align-items: center;
@@ -181,6 +186,10 @@ body {
     letter-spacing: 0.1px;
     word-spacing: 0.5px;
   }
+=======
+
+
+>>>>>>> 699e721ccfe8ee4f1c09a80949b4b433d2dda86a
 =======
 
 

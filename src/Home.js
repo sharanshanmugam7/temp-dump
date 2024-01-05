@@ -36,7 +36,11 @@ export default function Home() {
             </nav>
         </header>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <section className="home" id="home">
+=======
+        <section className="home">
+>>>>>>> 699e721ccfe8ee4f1c09a80949b4b433d2dda86a
 =======
         <section className="home">
 >>>>>>> 699e721ccfe8ee4f1c09a80949b4b433d2dda86a
@@ -61,6 +65,7 @@ export default function Home() {
             </div>
         </section>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <section className="about" id="about">
         <div className="a-img">
 
@@ -70,6 +75,9 @@ export default function Home() {
           <p>This is the about section below the home section.</p>
         </div>
       </section>
+=======
+        
+>>>>>>> 699e721ccfe8ee4f1c09a80949b4b433d2dda86a
 =======
         
 >>>>>>> 699e721ccfe8ee4f1c09a80949b4b433d2dda86a
