@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&family=Sen&family=Style+Script&display=swap');
+
+* {
+<<<<<<< HEAD
+=======
+    margin: 0;
+>>>>>>> 699e721ccfe8ee4f1c09a80949b4b433d2dda86a
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sen', sans-serif;
+    text-decoration: none;
+    color: white;
+    
+}
+body {
+    background-image: url('./images/bg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    z-index: 100;
+    height: 77px;
+    
+}
+.icon{
+    font-size: 50px;
+    font-weight: 600;
+    padding-top: 10px;
+    letter-spacing: 3px;
+    font-family: 'Style Script', cursive;
+    color: #66FCF1;
+    animation: slideRight 0.5s ease forwards;
+}
+.bar a {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 50px;
+    letter-spacing: 0.5px;
+    transition: .3s;
+    color: rgb(255, 255, 255);
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.1s*var(--i));
+}
+.bar a:hover,.bar a.active{
+    color: #66FCF1;
+}
+.home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+}
+.hcontent{
+    max-width: 600px;
+    
+    
+}
+.hcontent h1{
+    font-size: 60px;
+    font-weight: 1000;
+    font-family: 'Montserrat', sans-serif;
+    animation: slideRight 1.3s ease forwards;
+    padding-bottom: 10px;
+    
+    
+}
+.hcontent h3 span{
+    font-size: 38px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #66FCF1;
+    animation: slideRight 1.8s ease forwards;
+}
+.hcontent p{
+    padding-top: 20px;
+    font-size: 17px;
+    width: 550px;
+    letter-spacing: 0.1px;
+    word-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.799);
+    animation: slideRight 2.5s ease forwards;
+}
+.dn{
+    display: flex;
+    position: absolute;
+    margin-top: 60px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border-color: transparent;
+    background:  transparent;
+}
+.dn box-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.dn a{
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    border: 2px solid;
+    border-color: transparent;
+    border-radius: 2px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+    animation: slideRight 1s ease forwards;
+}
+.dn a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 25px;
+    border-color: transparent;
+    background: #66FCF1;
+    transition: .2s;
+    z-index: -1;
+}
+.dn a:hover::before{
+    width: 100%;
+}
+
+.hcontent .btn{
+    width: 345px;
+    height: 50px;
+    background: red;
+}
+
+.btn a{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 90%;
+    border: 2px solid;
+    border-radius: 8px;
+    font-size: 17px;
+    background: #66FCF1;
+}
+<<<<<<< HEAD
+.about {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+
+    }
+  
+  .a-content {
+    max-width: 600px;
+
+  }
+  
+  .a-content h2 {
+    font-size: 60px; /* Use the desired font size for About section h2 */
+    font-weight: 1000;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .a-content p {
+    padding-top: 20px;
+    font-size: 17px;
+    width: 550px;
+    letter-spacing: 0.1px;
+    word-spacing: 0.5px;
+  }
+=======
+
+
+>>>>>>> 699e721ccfe8ee4f1c09a80949b4b433d2dda86a
+
+
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
