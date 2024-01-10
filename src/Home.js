@@ -39,7 +39,7 @@ export default function Home() {
             <nav className="bar">
                 <a href="#" style={{"--i":1}} className="active">Home</a>
                 <a href="#" style={{ "--i": 2 }} onClick={scrollToAbout}>About</a>
-                <a href="#" style={{"--i":3}} >Qualification</a>
+                <a href="#" style={{"--i":3}} >Experience</a>
                 <a href="#" style={{"--i":4}} >Projects</a>
                 <a href="#" style={{"--i":5}} >Contact</a>
             </nav>
@@ -77,9 +77,6 @@ export default function Home() {
             </div>
         </section>
         <section className="about" id="about" style={{ paddingTop: '100px' }}>
-        <div className="a-img">
-
-        </div>
         <div className="acontent">
           
         <h2 className="ahead">About</h2>
@@ -127,6 +124,15 @@ export default function Home() {
 
         </div>
       </section>
+        <section className="exp" id="exp" style={{ paddingTop: '100px' }}>
+        <div className="expcontent">
+          
+        <h2 className="exphead">Experience</h2>
+
+        </div>
+       
+      </section>
+
     </div>
   )
 }
