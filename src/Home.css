@@ -195,6 +195,7 @@ body {
     margin: 100px 0;
     padding-left: 250px;
     gap: 2.5rem;
+    overflow: hidden;
   }
 .ebox {
   flex: 1 1 calc(50% - 1rem); 
@@ -202,6 +203,8 @@ body {
   padding: 2rem;
   border-radius: 2rem;
   text-align: center;
+  transform: translateX(0);
+  animation: slideLoop 10s linear infinite;
 }
 .ebox:hover{
     transform: scale(1.03);
@@ -245,22 +248,41 @@ body {
     background: #000;
     color: #66FCF1;
 }
-.exp {
+.skill {
     display: flex;
     height: 100vh;
     padding: 0 10%;
 }
-.exphead{
+.skhead{
     text-align: center;
     font-size: 4.5rem;
 }
-.expcontent h2{
-    text-align: left;
-    line-height: 1.2;
+
+.skcontent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
     animation: slideRight 2s ease forwards;
 }
-
-
+.skbox{
+    flex: 1 1 30rem;
+    padding: 3rem 3rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    line-height: 23px;
+    background: rgba(0, 0, 0, 0.196);
+    transition: .5s;
+    color: rgba(255, 255, 255, 0.799);
+}
+.skbox * {
+    color: inherit;
+}
+.skcontent .skbox:hover{
+    border: .1rem solid #66fcf2c0;
+    transform: scale(1.02);
+}
 
 
   
@@ -285,6 +307,12 @@ body {
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+.project {
+    display: flex;
+    height: 100vh;
+    padding: 0 10%;
 }
 
 

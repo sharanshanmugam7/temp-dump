@@ -31,6 +31,9 @@ export default function Home() {
       aboutSection.scrollIntoView({ behavior: 'smooth' });
     };
 
+
+    
+
     
   return (
     <div className="main">
@@ -39,7 +42,7 @@ export default function Home() {
             <nav className="bar">
                 <a href="#" style={{"--i":1}} className="active">Home</a>
                 <a href="#" style={{ "--i": 2 }} onClick={scrollToAbout}>About</a>
-                <a href="#" style={{"--i":3}} >Experience</a>
+                <a href="#" style={{"--i":3}} >Skills</a>
                 <a href="#" style={{"--i":4}} >Projects</a>
                 <a href="#" style={{"--i":5}} >Contact</a>
             </nav>
@@ -76,6 +79,8 @@ export default function Home() {
                     </div>
             </div>
         </section>
+
+
         <section className="about" id="about" style={{ paddingTop: '100px' }}>
         <div className="acontent">
           
@@ -104,34 +109,74 @@ export default function Home() {
               </a>
             </div>
         </div>
-        <div className="edu">
-          <div className="econt">
-            <div className="ebox">
-            <box-icon name='code-alt' animation='flashing' color='#66FCF1'></box-icon>
-            <h3>Technical Proficiencies</h3>
-            <ul className="tech-list">
-              <li>C++</li>
-              <li>Embedded C++</li>
-              <li>Java</li>
-              <li>JavaScript (JS)</li>
-              <li>React</li>
-              <li>Node.js</li>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
+        
+      </section>
+
+
+        <section className="skill" id="skill" style={{ paddingTop: '100px' }}>
+          <h2 className="skhead">Skills</h2>
+        <div className="skcontent">
+          <div className="skbox">
+            <box-icon name='code-alt' color='#66FCF1'></box-icon>
+            <h3>Web Development</h3>
+            <p>Crafting immersive user experiences through front-end development and shaping robust server-side functionality.</p>
+          </div>
+          <div className="skbox">
+            <box-icon name='c-plus-plus' type='logo' color='#66FCF1'></box-icon>
+            <h3>Embedded Systems</h3>
+            <p>Architecting intelligent solutions and bringing innovation to life in the realm of IoT.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="project" id="project" style={{paddingTop:'100px '}}>
+        <h2 className="skhead">Projects</h2>
+        <div className="pjcontent">
+          <div className="pbox">
+            <img src={'/project/p1.jpg'} alt="1" />
+              <div className="player">
+                <h4>Web Application 1</h4>
+                <p>
+                To achieve the desired effect of flipping the box on
+                hover to display technical proficiency, you can use 
+                CSS3 transitions and transforms. Here's an example of 
+                how you can modify your CSS and add a new class to 
+                handle the flipping effect
+                </p>
+              <a href="#"><box-icon name='link-external' color='white'></box-icon></a>
             </div>
           </div>
-
+          <div className="pbox">
+            <img src={'/project/p1.jpg'} alt="1" />
+              <div className="player">
+                <h4>Web Application 1</h4>
+                <p>
+                To achieve the desired effect of flipping the box on
+                hover to display technical proficiency, you can use 
+                CSS3 transitions and transforms. Here's an example of 
+                how you can modify your CSS and add a new class to 
+                handle the flipping effect
+                </p>
+              <a href="#"><box-icon name='link-external' color='white'></box-icon></a>
+            </div>
+          </div>
+          <div className="pbox">
+            <img src={'/project/p1.jpg'} alt="1" />
+              <div className="player">
+                <h4>Web Application 1</h4>
+                <p>
+                To achieve the desired effect of flipping the box on
+                hover to display technical proficiency, you can use 
+                CSS3 transitions and transforms. Here's an example of 
+                how you can modify your CSS and add a new class to 
+                handle the flipping effect
+                </p>
+              <a href="#"><box-icon name='link-external' color='white'></box-icon></a>
+            </div>
+          </div>
         </div>
       </section>
-        <section className="exp" id="exp" style={{ paddingTop: '100px' }}>
-        <div className="expcontent">
-          
-        <h2 className="exphead">Experience</h2>
 
-        </div>
-       
-      </section>
 
     </div>
   )
